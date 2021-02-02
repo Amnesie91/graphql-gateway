@@ -1,7 +1,7 @@
 const { ApolloGateway, RemoteGraphQLDataSource } = require("@apollo/gateway");
 const { ApolloServer } = require("apollo-server-express");
 const depthLimit = require("graphql-depth-limit");
-const costAnalysis = require("graphql-cost-analysis");
+const costAnalysis = require("graphql-cost-analysis").default;
 
 const express = require("express");
 const expressJwt = require("express-jwt");
@@ -30,7 +30,8 @@ app.use(function (err, req, res, next) {
 const gateway = new ApolloGateway({
   serviceList: [
     { name: "accounts", url: "http://localhost:4001" },
-    { name: "cars", url: "http://localhost:4002" },
+    { name: "images", url: "http://localhost:4004" },
+    { name: "legends", url: "http://localhost:4003" },
   ],
   // thats how we get the information from the context, to the implementing services
   buildService({ name, url }) {

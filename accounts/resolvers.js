@@ -50,11 +50,6 @@ const resolvers = {
       return createAccessToken({ roles, permissions }, id);
     },
   },
-  Car: {
-    owner: function (car) {
-      return accounts.find((acc) => acc.id === car.userId);
-    },
-  },
 };
 
 module.exports = {

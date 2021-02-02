@@ -11,11 +11,6 @@ const typeDefs = gql`
     refresh: String!
   }
 
-  extend type Car @key(fields: "userId") {
-    userId: ID! @external
-    owner: Account
-  }
-
   extend type Query {
     account(id: ID!): Account
     accounts: [Account]

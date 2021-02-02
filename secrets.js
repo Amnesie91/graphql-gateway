@@ -1,6 +1,6 @@
 const ACCESS_TOKEN_SECRET = "3123012edksadksad.y<wKKO0023k32";
 const REFRESH_TOKEN_SECRET = "%646hdsjhdsjsdsdsd.y<wKKO002üore2";
-const ACCESS_TOKEN_LIFETIME = "30m";
+const ACCESS_TOKEN_LIFETIME = "1h";
 const REFRESH_TOKEN_LIFETIME = "1d";
 const JWT_ALGORYTHM = "HS256";
 module.exports = {

@@ -6,7 +6,8 @@
   "scripts": {
     "server": "concurrently -k npm:server:*",
     "server:accounts": "nodemon ./accounts/index.js",
-    "server:cars": "nodemon ./cars/index.js",
+    "server:legends": "nodemon ./legends/index.js",
+    "server:images": "nodemon ./images/index.js",
     "server:gateway": "wait-on tcp:4001 && nodemon ./index.js"
   },
   "keywords": [],
@@ -27,6 +28,7 @@
     "graphql-shield": "^7.4.4",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.7",
+    "probe-image-size": "^6.0.0",
     "wait-on": "^5.2.1"
   }
 }

@@ -5,7 +5,7 @@ const { resolvers } = require("./resolvers");
 const { typeDefs } = require("./schema");
 const { permissions } = require("./permissions");
 
-const port = 4002;
+const port = 4004;
 
 const server = new ApolloServer({
   schema: applyMiddleware(
@@ -19,5 +19,5 @@ const server = new ApolloServer({
 });
 
 server.listen({ port }).then(({ url }) => {
-  console.log(`Car service ready at ${url}`);
+  console.log(`Files service ready at ${url}`);
 });
