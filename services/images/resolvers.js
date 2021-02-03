@@ -1,6 +1,6 @@
 const { findImageById, findAllImages } = require("./utils");
 const probe = require("probe-image-size");
-const { images } = require("../data");
+const { images } = require("../../data");
 
 const resolvers = {
   Image: {

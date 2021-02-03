@@ -5,9 +5,9 @@ const {
   ACCESS_TOKEN_LIFETIME,
   JWT_ALGORYTHM,
   REFRESH_TOKEN_LIFETIME,
-} = require("../secrets");
+} = require("../../secrets");
 
-const { accounts, jwts } = require("../data");
+const { accounts, jwts } = require("../../data");
 
 function createJwt(data, subject, secret, algorithm, expiresIn) {
   return jwt.sign({ "https://awesomeapi.com/graphql": data }, secret, {

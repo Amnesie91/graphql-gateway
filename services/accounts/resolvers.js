@@ -1,4 +1,4 @@
-const { accounts } = require("../data");
+const { accounts } = require("../../data");
 const {
   createAccessToken,
   findAccountWithEmailAndPassword,

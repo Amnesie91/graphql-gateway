@@ -1,4 +1,4 @@
-const { images } = require("../data");
+const { images } = require("../../data");
 
 function findImageById(id) {
   const image = images.find((image) => image.id === id);

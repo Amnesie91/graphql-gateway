@@ -1,4 +1,4 @@
-const { legends, skills } = require("../data");
+const { legends, skills } = require("../../data");
 const {
   findSkillById,
   findLegendById,

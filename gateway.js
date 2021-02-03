@@ -30,8 +30,9 @@ app.use(function (err, req, res, next) {
 const gateway = new ApolloGateway({
   serviceList: [
     { name: "accounts", url: "http://localhost:4001" },
-    { name: "images", url: "http://localhost:4004" },
+    { name: "posts", url: "http://localhost:4002" },
     { name: "legends", url: "http://localhost:4003" },
+    { name: "images", url: "http://localhost:4004" },
   ],
   // thats how we get the information from the context, to the implementing services
   buildService({ name, url }) {

@@ -1,4 +1,4 @@
-const { legends, skills } = require("../data");
+const { legends, skills } = require("../../data");
 
 function findLegendById(id) {
   const legend = legends.find((legend) => legend.id === id);

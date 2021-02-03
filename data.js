@@ -39,25 +39,9 @@ module.exports = {
       ],
     },
   ],
-  cars: [
-    {
-      id: "66667",
-      name: "E Klasse",
-      userId: "12345",
-    },
-    {
-      id: "11116",
-      name: "A Klasse",
-      userId: "67890",
-    },
-    {
-      id: "99998",
-      name: "C Klasse",
-      userId: "67890",
-    },
-  ],
   jwts: [],
   legends: [],
   skills: [],
   images: [],
+  posts: [],
 };

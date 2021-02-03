@@ -2,13 +2,14 @@
   "name": "apollo-federation-auth-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gateway.js",
   "scripts": {
     "server": "concurrently -k npm:server:*",
-    "server:accounts": "nodemon ./accounts/index.js",
-    "server:legends": "nodemon ./legends/index.js",
-    "server:images": "nodemon ./images/index.js",
-    "server:gateway": "wait-on tcp:4001 && nodemon ./index.js"
+    "server:accounts": "nodemon ./services/accounts/index.js",
+    "server:legends": "nodemon ./services/legends/index.js",
+    "server:images": "nodemon ./services/images/index.js",
+    "server:posts": "nodemon ./services/posts/index.js",
+    "server:gateway": "wait-on tcp:4001 tcp:4002 tcp:4003 tcp:4004 && nodemon ./gateway.js"
   },
   "keywords": [],
   "author": "",
